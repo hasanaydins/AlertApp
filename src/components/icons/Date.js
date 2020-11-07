@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Svg, {Path} from 'react-native-svg';
 
-function SvgSearch(props) {
+function SvgDate(props) {
   return (
     <Svg
       width={24}
@@ -11,8 +11,8 @@ function SvgSearch(props) {
       className=""
       {...props}>
       <Path
-        d="M10 17a7 7 0 100-14 7 7 0 000 14zM21 21l-6-6"
-        stroke="currentColor"
+        d="M18 5H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2zM16 3v4M8 3v4M4 11h16M11 15h1M12 15v3"
+        stroke="#383838"
         strokeWidth={1.5}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -21,4 +21,4 @@ function SvgSearch(props) {
   );
 }
 
-export default SvgSearch;
+export default SvgDate;

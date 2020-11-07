@@ -6,8 +6,10 @@ const radii = {
 };
 
 const colors = {
-  purple: '#6400FF',
-  gray: '#5F5F5F',
+  oneRed: '#E53641',
+  gray: '#9B9B9B',
+  white: '#FFFFFF',
+  darkGray: '#383838',
 };
 
 export default {

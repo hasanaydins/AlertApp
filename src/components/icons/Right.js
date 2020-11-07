@@ -1,19 +1,19 @@
 import * as React from 'react';
 import Svg, {Path} from 'react-native-svg';
 
-function SvgSearch(props) {
+function SvgRight(props) {
   return (
     <Svg
-      width={24}
-      height={24}
-      viewBox="0 0 24 24"
+      width={30}
+      height={30}
+      viewBox="0 0 30 30"
       fill="none"
       className=""
       {...props}>
       <Path
-        d="M10 17a7 7 0 100-14 7 7 0 000 14zM21 21l-6-6"
-        stroke="currentColor"
-        strokeWidth={1.5}
+        d="M12.614 7.5l7.5 7.5-7.5 7.5"
+        stroke="#2C3E50"
+        strokeWidth={2.75}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -21,4 +21,4 @@ function SvgSearch(props) {
   );
 }
 
-export default SvgSearch;
+export default SvgRight;

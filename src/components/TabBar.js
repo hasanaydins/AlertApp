@@ -12,12 +12,12 @@ function TabBar({state, descriptors, navigation}) {
     <View
       style={{
         flexDirection: 'row',
-        backgroundColor: 'red',
+        backgroundColor: 'white',
         borderTopLeftRadius: 25,
         borderTopRightRadius: 25,
         position: 'absolute',
         bottom: 0,
-        paddingBottom: 12
+        paddingBottom: 12,
       }}>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
@@ -51,12 +51,20 @@ function TabBar({state, descriptors, navigation}) {
             justifyContent="center"
             onPress={onPress}>
             {label === 'Home' && (
-              <SvgHome stroke={isFocused ? 'white' : 'black'} />
+              <SvgHome
+                stroke={isFocused ? Theme.colors.oneRed : Theme.colors.gray}
+              />
             )}
             {label === 'Search' && (
-              <SvgBookmark stroke={isFocused ? 'white' : 'black'} />
+              <SvgBookmark
+                stroke={isFocused ? Theme.colors.oneRed : Theme.colors.gray}
+              />
             )}
-            {label === 'Profile' && <SvgUser stroke={Theme.colors.gray} />}
+            {label === 'Profile' && (
+              <SvgUser
+                stroke={isFocused ? Theme.colors.oneRed : Theme.colors.gray}
+              />
+            )}
           </Button>
         );
       })}
