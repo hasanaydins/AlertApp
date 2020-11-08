@@ -1,8 +1,8 @@
-import { Text, View } from 'react-native';
-import { createStackNavigator } from '@react-navigation/stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import * as React from 'react';
 import DetailSearch from './DetailSearch';
-
+import Box from '../components/Box';
+import Text from "../components/Text";
 const SearchStack = createStackNavigator();
 
 function SearchStackScreen() {
@@ -16,19 +16,20 @@ function SearchStackScreen() {
         headerTitleStyle: {
           fontWeight: 'bold',
         },
-      }}
-    >
-      <SearchStack.Screen name='Search' component={Search} />
-      <SearchStack.Screen name='Details' component={DetailSearch} />
+      }}>
+      <SearchStack.Screen name="Search" component={Search} />
+      <SearchStack.Screen name="Details" component={DetailSearch} />
     </SearchStack.Navigator>
   );
 }
 
-function Search({ props }) {
+function Search({props}) {
+
+
   return (
-    <View style={{ flex: 1 }}>
-      <Text>sd</Text>
-    </View>
+    <Box style={{flex: 1}}>
+        <Text>sdds</Text>
+    </Box>
   );
 }
 
